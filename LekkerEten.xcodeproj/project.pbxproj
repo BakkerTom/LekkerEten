@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6853138A720D776A37E17CA8 /* Pods_LekkerEten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309278C8A84EC00543CA9604 /* Pods_LekkerEten.framework */; };
+		E24FFA7A1E28E3D700E1D462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FFA771E28E3D700E1D462 /* AppDelegate.swift */; };
+		E24FFA7B1E28E3D700E1D462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24FFA781E28E3D700E1D462 /* Assets.xcassets */; };
+		E24FFA851E28E61A00E1D462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24FFA841E28E61A00E1D462 /* Main.storyboard */; };
+		E24FFA871E28E63900E1D462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24FFA861E28E63900E1D462 /* LaunchScreen.storyboard */; };
 		E2E993C61E28E1BB00EDCADF /* LekkerEtenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993C51E28E1BB00EDCADF /* LekkerEtenTests.swift */; };
 		E2E993E41E28E26A00EDCADF /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D11E28E26A00EDCADF /* CategoryTableViewCell.swift */; };
 		E2E993E51E28E26A00EDCADF /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D21E28E26A00EDCADF /* Instruction.swift */; };
@@ -48,6 +52,11 @@
 		9F89B095831796AE1F96193F /* Pods-LekkerEten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LekkerEten.release.xcconfig"; path = "Pods/Target Support Files/Pods-LekkerEten/Pods-LekkerEten.release.xcconfig"; sourceTree = "<group>"; };
 		A23FF3DE69A0E03E0287C565 /* Pods-LekkerEtenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LekkerEtenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LekkerEtenTests/Pods-LekkerEtenTests.release.xcconfig"; sourceTree = "<group>"; };
 		B49CF36D24A63057AEBFAF56 /* Pods_LekkerEtenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LekkerEtenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24FFA771E28E3D700E1D462 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E24FFA781E28E3D700E1D462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E24FFA7D1E28E47800E1D462 /* LekkerEten-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LekkerEten-Bridging-Header.h"; sourceTree = "<group>"; };
+		E24FFA841E28E61A00E1D462 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E24FFA861E28E63900E1D462 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2E993AD1E28E1BB00EDCADF /* LekkerEten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LekkerEten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E993C11E28E1BB00EDCADF /* LekkerEtenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LekkerEtenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E993C51E28E1BB00EDCADF /* LekkerEtenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LekkerEtenTests.swift; sourceTree = "<group>"; };
@@ -136,6 +145,10 @@
 		E2E993AF1E28E1BB00EDCADF /* LekkerEten */ = {
 			isa = PBXGroup;
 			children = (
+				E24FFA861E28E63900E1D462 /* LaunchScreen.storyboard */,
+				E24FFA841E28E61A00E1D462 /* Main.storyboard */,
+				E24FFA771E28E3D700E1D462 /* AppDelegate.swift */,
+				E24FFA781E28E3D700E1D462 /* Assets.xcassets */,
 				E2E993D11E28E26A00EDCADF /* CategoryTableViewCell.swift */,
 				E2E993D21E28E26A00EDCADF /* Instruction.swift */,
 				E2E993D31E28E26A00EDCADF /* InstructionsTableViewCell.swift */,
@@ -155,6 +168,7 @@
 				E2E993E11E28E26A00EDCADF /* RealmData.swift */,
 				E2E993E21E28E26A00EDCADF /* RecipeViewController.swift */,
 				E2E993E31E28E26A00EDCADF /* WebService.swift */,
+				E24FFA7D1E28E47800E1D462 /* LekkerEten-Bridging-Header.h */,
 			);
 			path = LekkerEten;
 			sourceTree = "<group>";
@@ -224,6 +238,7 @@
 				TargetAttributes = {
 					E2E993AC1E28E1BB00EDCADF = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VRXSKYXNPW;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -258,6 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24FFA851E28E61A00E1D462 /* Main.storyboard in Resources */,
+				E24FFA871E28E63900E1D462 /* LaunchScreen.storyboard in Resources */,
+				E24FFA7B1E28E3D700E1D462 /* Assets.xcassets in Resources */,
 				E2E993EA1E28E26A00EDCADF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +389,7 @@
 			files = (
 				E2E993F61E28E26A00EDCADF /* WebService.swift in Sources */,
 				E2E993F01E28E26A00EDCADF /* FoodtruckViewController.swift in Sources */,
+				E24FFA7A1E28E3D700E1D462 /* AppDelegate.swift in Sources */,
 				E2E993F31E28E26A00EDCADF /* IngredientTableViewController.swift in Sources */,
 				E2E993E71E28E26A00EDCADF /* InstructionsTableViewController.swift in Sources */,
 				E2E993F51E28E26A00EDCADF /* RecipeViewController.swift in Sources */,
@@ -506,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VRXSKYXNPW;
 				INFOPLIST_FILE = LekkerEten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.LekkerEten;
@@ -522,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VRXSKYXNPW;
 				INFOPLIST_FILE = LekkerEten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.LekkerEten;
