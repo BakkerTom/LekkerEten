@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2E993B11E28E1BB00EDCADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993B01E28E1BB00EDCADF /* AppDelegate.swift */; };
-		E2E993B31E28E1BB00EDCADF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993B21E28E1BB00EDCADF /* ViewController.swift */; };
-		E2E993B61E28E1BB00EDCADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E993B41E28E1BB00EDCADF /* Main.storyboard */; };
-		E2E993B81E28E1BB00EDCADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E993B71E28E1BB00EDCADF /* Assets.xcassets */; };
-		E2E993BB1E28E1BB00EDCADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E993B91E28E1BB00EDCADF /* LaunchScreen.storyboard */; };
+		6853138A720D776A37E17CA8 /* Pods_LekkerEten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309278C8A84EC00543CA9604 /* Pods_LekkerEten.framework */; };
 		E2E993C61E28E1BB00EDCADF /* LekkerEtenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993C51E28E1BB00EDCADF /* LekkerEtenTests.swift */; };
+		E2E993E41E28E26A00EDCADF /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D11E28E26A00EDCADF /* CategoryTableViewCell.swift */; };
+		E2E993E51E28E26A00EDCADF /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D21E28E26A00EDCADF /* Instruction.swift */; };
+		E2E993E61E28E26A00EDCADF /* InstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D31E28E26A00EDCADF /* InstructionsTableViewCell.swift */; };
+		E2E993E71E28E26A00EDCADF /* InstructionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D41E28E26A00EDCADF /* InstructionsTableViewController.swift */; };
+		E2E993E81E28E26A00EDCADF /* InstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D51E28E26A00EDCADF /* InstructionTableViewCell.swift */; };
+		E2E993E91E28E26A00EDCADF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D61E28E26A00EDCADF /* Category.swift */; };
+		E2E993EA1E28E26A00EDCADF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2E993D71E28E26A00EDCADF /* Info.plist */; };
+		E2E993EB1E28E26A00EDCADF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D81E28E26A00EDCADF /* Recipe.swift */; };
+		E2E993EC1E28E26A00EDCADF /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993D91E28E26A00EDCADF /* CategoryTableViewController.swift */; };
+		E2E993ED1E28E26A00EDCADF /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993DA1E28E26A00EDCADF /* RecipeTableViewCell.swift */; };
+		E2E993EE1E28E26A00EDCADF /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993DB1E28E26A00EDCADF /* RecipeTableViewController.swift */; };
+		E2E993EF1E28E26A00EDCADF /* Foodtruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993DC1E28E26A00EDCADF /* Foodtruck.swift */; };
+		E2E993F01E28E26A00EDCADF /* FoodtruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993DD1E28E26A00EDCADF /* FoodtruckViewController.swift */; };
+		E2E993F11E28E26A00EDCADF /* FVCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993DE1E28E26A00EDCADF /* FVCMapView.swift */; };
+		E2E993F21E28E26A00EDCADF /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993DF1E28E26A00EDCADF /* IngredientTableViewCell.swift */; };
+		E2E993F31E28E26A00EDCADF /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993E01E28E26A00EDCADF /* IngredientTableViewController.swift */; };
+		E2E993F41E28E26A00EDCADF /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993E11E28E26A00EDCADF /* RealmData.swift */; };
+		E2E993F51E28E26A00EDCADF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993E21E28E26A00EDCADF /* RecipeViewController.swift */; };
+		E2E993F61E28E26A00EDCADF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E993E31E28E26A00EDCADF /* WebService.swift */; };
+		F8B1761FBA362008D5A41C43 /* Pods_LekkerEtenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49CF36D24A63057AEBFAF56 /* Pods_LekkerEtenTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +42,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FD287E15AE1C5B24BC304A9 /* Pods-LekkerEten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LekkerEten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LekkerEten/Pods-LekkerEten.debug.xcconfig"; sourceTree = "<group>"; };
+		309278C8A84EC00543CA9604 /* Pods_LekkerEten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LekkerEten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81DCFB898D1C7B9C64F44D09 /* Pods-LekkerEtenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LekkerEtenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LekkerEtenTests/Pods-LekkerEtenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F89B095831796AE1F96193F /* Pods-LekkerEten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LekkerEten.release.xcconfig"; path = "Pods/Target Support Files/Pods-LekkerEten/Pods-LekkerEten.release.xcconfig"; sourceTree = "<group>"; };
+		A23FF3DE69A0E03E0287C565 /* Pods-LekkerEtenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LekkerEtenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LekkerEtenTests/Pods-LekkerEtenTests.release.xcconfig"; sourceTree = "<group>"; };
+		B49CF36D24A63057AEBFAF56 /* Pods_LekkerEtenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LekkerEtenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E993AD1E28E1BB00EDCADF /* LekkerEten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LekkerEten.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2E993B01E28E1BB00EDCADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2E993B21E28E1BB00EDCADF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2E993B51E28E1BB00EDCADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2E993B71E28E1BB00EDCADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2E993BA1E28E1BB00EDCADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E2E993BC1E28E1BB00EDCADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E993C11E28E1BB00EDCADF /* LekkerEtenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LekkerEtenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E993C51E28E1BB00EDCADF /* LekkerEtenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LekkerEtenTests.swift; sourceTree = "<group>"; };
 		E2E993C71E28E1BB00EDCADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E993D11E28E26A00EDCADF /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E2E993D21E28E26A00EDCADF /* Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		E2E993D31E28E26A00EDCADF /* InstructionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsTableViewCell.swift; sourceTree = "<group>"; };
+		E2E993D41E28E26A00EDCADF /* InstructionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsTableViewController.swift; sourceTree = "<group>"; };
+		E2E993D51E28E26A00EDCADF /* InstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionTableViewCell.swift; sourceTree = "<group>"; };
+		E2E993D61E28E26A00EDCADF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E2E993D71E28E26A00EDCADF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E993D81E28E26A00EDCADF /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E2E993D91E28E26A00EDCADF /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		E2E993DA1E28E26A00EDCADF /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		E2E993DB1E28E26A00EDCADF /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		E2E993DC1E28E26A00EDCADF /* Foodtruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foodtruck.swift; sourceTree = "<group>"; };
+		E2E993DD1E28E26A00EDCADF /* FoodtruckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodtruckViewController.swift; sourceTree = "<group>"; };
+		E2E993DE1E28E26A00EDCADF /* FVCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FVCMapView.swift; sourceTree = "<group>"; };
+		E2E993DF1E28E26A00EDCADF /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		E2E993E01E28E26A00EDCADF /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
+		E2E993E11E28E26A00EDCADF /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		E2E993E21E28E26A00EDCADF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		E2E993E31E28E26A00EDCADF /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6853138A720D776A37E17CA8 /* Pods_LekkerEten.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +86,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B1761FBA362008D5A41C43 /* Pods_LekkerEtenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A56BA6513C57C50ADEFB89E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FD287E15AE1C5B24BC304A9 /* Pods-LekkerEten.debug.xcconfig */,
+				9F89B095831796AE1F96193F /* Pods-LekkerEten.release.xcconfig */,
+				81DCFB898D1C7B9C64F44D09 /* Pods-LekkerEtenTests.debug.xcconfig */,
+				A23FF3DE69A0E03E0287C565 /* Pods-LekkerEtenTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B31CE9EE03E9AFEE3CD0BA7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309278C8A84EC00543CA9604 /* Pods_LekkerEten.framework */,
+				B49CF36D24A63057AEBFAF56 /* Pods_LekkerEtenTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2E993A41E28E1BA00EDCADF = {
 			isa = PBXGroup;
 			children = (
 				E2E993AF1E28E1BB00EDCADF /* LekkerEten */,
 				E2E993C41E28E1BB00EDCADF /* LekkerEtenTests */,
 				E2E993AE1E28E1BB00EDCADF /* Products */,
+				A56BA6513C57C50ADEFB89E9 /* Pods */,
+				B31CE9EE03E9AFEE3CD0BA7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +136,25 @@
 		E2E993AF1E28E1BB00EDCADF /* LekkerEten */ = {
 			isa = PBXGroup;
 			children = (
-				E2E993B01E28E1BB00EDCADF /* AppDelegate.swift */,
-				E2E993B21E28E1BB00EDCADF /* ViewController.swift */,
-				E2E993B41E28E1BB00EDCADF /* Main.storyboard */,
-				E2E993B71E28E1BB00EDCADF /* Assets.xcassets */,
-				E2E993B91E28E1BB00EDCADF /* LaunchScreen.storyboard */,
-				E2E993BC1E28E1BB00EDCADF /* Info.plist */,
+				E2E993D11E28E26A00EDCADF /* CategoryTableViewCell.swift */,
+				E2E993D21E28E26A00EDCADF /* Instruction.swift */,
+				E2E993D31E28E26A00EDCADF /* InstructionsTableViewCell.swift */,
+				E2E993D41E28E26A00EDCADF /* InstructionsTableViewController.swift */,
+				E2E993D51E28E26A00EDCADF /* InstructionTableViewCell.swift */,
+				E2E993D61E28E26A00EDCADF /* Category.swift */,
+				E2E993D71E28E26A00EDCADF /* Info.plist */,
+				E2E993D81E28E26A00EDCADF /* Recipe.swift */,
+				E2E993D91E28E26A00EDCADF /* CategoryTableViewController.swift */,
+				E2E993DA1E28E26A00EDCADF /* RecipeTableViewCell.swift */,
+				E2E993DB1E28E26A00EDCADF /* RecipeTableViewController.swift */,
+				E2E993DC1E28E26A00EDCADF /* Foodtruck.swift */,
+				E2E993DD1E28E26A00EDCADF /* FoodtruckViewController.swift */,
+				E2E993DE1E28E26A00EDCADF /* FVCMapView.swift */,
+				E2E993DF1E28E26A00EDCADF /* IngredientTableViewCell.swift */,
+				E2E993E01E28E26A00EDCADF /* IngredientTableViewController.swift */,
+				E2E993E11E28E26A00EDCADF /* RealmData.swift */,
+				E2E993E21E28E26A00EDCADF /* RecipeViewController.swift */,
+				E2E993E31E28E26A00EDCADF /* WebService.swift */,
 			);
 			path = LekkerEten;
 			sourceTree = "<group>";
@@ -103,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E993CA1E28E1BB00EDCADF /* Build configuration list for PBXNativeTarget "LekkerEten" */;
 			buildPhases = (
+				2AC42E27091CD44FED8C2929 /* [CP] Check Pods Manifest.lock */,
 				E2E993A91E28E1BB00EDCADF /* Sources */,
 				E2E993AA1E28E1BB00EDCADF /* Frameworks */,
 				E2E993AB1E28E1BB00EDCADF /* Resources */,
+				FD9B6C5EFDABE2032B17E79E /* [CP] Embed Pods Frameworks */,
+				6B5EFA71BC56B62AD973A790 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E993CD1E28E1BB00EDCADF /* Build configuration list for PBXNativeTarget "LekkerEtenTests" */;
 			buildPhases = (
+				23710C2F60638A533F2916C8 /* [CP] Check Pods Manifest.lock */,
 				E2E993BD1E28E1BB00EDCADF /* Sources */,
 				E2E993BE1E28E1BB00EDCADF /* Frameworks */,
 				E2E993BF1E28E1BB00EDCADF /* Resources */,
+				37E6F6A7C732CCAA6197AD6C /* [CP] Embed Pods Frameworks */,
+				CF439893B8053AD6C36F1CC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +224,7 @@
 				TargetAttributes = {
 					E2E993AC1E28E1BB00EDCADF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E2E993C01E28E1BB00EDCADF = {
@@ -179,9 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E993BB1E28E1BB00EDCADF /* LaunchScreen.storyboard in Resources */,
-				E2E993B81E28E1BB00EDCADF /* Assets.xcassets in Resources */,
-				E2E993B61E28E1BB00EDCADF /* Main.storyboard in Resources */,
+				E2E993EA1E28E26A00EDCADF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +271,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23710C2F60638A533F2916C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2AC42E27091CD44FED8C2929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37E6F6A7C732CCAA6197AD6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LekkerEtenTests/Pods-LekkerEtenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B5EFA71BC56B62AD973A790 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LekkerEten/Pods-LekkerEten-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF439893B8053AD6C36F1CC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LekkerEtenTests/Pods-LekkerEtenTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD9B6C5EFDABE2032B17E79E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LekkerEten/Pods-LekkerEten-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2E993A91E28E1BB00EDCADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E993B31E28E1BB00EDCADF /* ViewController.swift in Sources */,
-				E2E993B11E28E1BB00EDCADF /* AppDelegate.swift in Sources */,
+				E2E993F61E28E26A00EDCADF /* WebService.swift in Sources */,
+				E2E993F01E28E26A00EDCADF /* FoodtruckViewController.swift in Sources */,
+				E2E993F31E28E26A00EDCADF /* IngredientTableViewController.swift in Sources */,
+				E2E993E71E28E26A00EDCADF /* InstructionsTableViewController.swift in Sources */,
+				E2E993F51E28E26A00EDCADF /* RecipeViewController.swift in Sources */,
+				E2E993F21E28E26A00EDCADF /* IngredientTableViewCell.swift in Sources */,
+				E2E993E81E28E26A00EDCADF /* InstructionTableViewCell.swift in Sources */,
+				E2E993F41E28E26A00EDCADF /* RealmData.swift in Sources */,
+				E2E993EB1E28E26A00EDCADF /* Recipe.swift in Sources */,
+				E2E993F11E28E26A00EDCADF /* FVCMapView.swift in Sources */,
+				E2E993ED1E28E26A00EDCADF /* RecipeTableViewCell.swift in Sources */,
+				E2E993EC1E28E26A00EDCADF /* CategoryTableViewController.swift in Sources */,
+				E2E993E61E28E26A00EDCADF /* InstructionsTableViewCell.swift in Sources */,
+				E2E993E51E28E26A00EDCADF /* Instruction.swift in Sources */,
+				E2E993E41E28E26A00EDCADF /* CategoryTableViewCell.swift in Sources */,
+				E2E993E91E28E26A00EDCADF /* Category.swift in Sources */,
+				E2E993EE1E28E26A00EDCADF /* RecipeTableViewController.swift in Sources */,
+				E2E993EF1E28E26A00EDCADF /* Foodtruck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,25 +407,6 @@
 			targetProxy = E2E993C21E28E1BB00EDCADF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E2E993B41E28E1BB00EDCADF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2E993B51E28E1BB00EDCADF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E2E993B91E28E1BB00EDCADF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2E993BA1E28E1BB00EDCADF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E2E993C81E28E1BB00EDCADF /* Debug */ = {
@@ -335,30 +502,38 @@
 		};
 		E2E993CB1E28E1BB00EDCADF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD287E15AE1C5B24BC304A9 /* Pods-LekkerEten.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LekkerEten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.LekkerEten;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LekkerEten/LekkerEten-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E2E993CC1E28E1BB00EDCADF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F89B095831796AE1F96193F /* Pods-LekkerEten.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LekkerEten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.LekkerEten;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LekkerEten/LekkerEten-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E2E993CE1E28E1BB00EDCADF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DCFB898D1C7B9C64F44D09 /* Pods-LekkerEtenTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -373,6 +548,7 @@
 		};
 		E2E993CF1E28E1BB00EDCADF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A23FF3DE69A0E03E0287C565 /* Pods-LekkerEtenTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -404,6 +580,7 @@
 				E2E993CC1E28E1BB00EDCADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2E993CD1E28E1BB00EDCADF /* Build configuration list for PBXNativeTarget "LekkerEtenTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +589,7 @@
 				E2E993CF1E28E1BB00EDCADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
