@@ -13,7 +13,7 @@ class IngredientTableViewController: UITableViewController {
 
     @IBOutlet var ingredientTableViewController: UITableView!
     
-    var ingredientsList = [RecipeIngredient]()
+    var ingredientsList = [IngredientList]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +52,12 @@ class IngredientTableViewController: UITableViewController {
         //cell.ingredientImage
         let ingredientCell = ingredientsList[indexPath.row]
         
+        // Convert NSData to UIImage
+        let image: UIImage = UIImage(data:ingredientCell.image as! Data)!
+        
+        cell.ingredientImage.image = image
         cell.ingredientName.text = ingredientCell.name;
-        cell.ingredientAmount.text = String(ingredientCell.amount)
+        cell.ingredientAmount.text = String(ingredientCell.amount) + " gram"
 
         // Configure the cell...
 
@@ -110,7 +114,7 @@ class IngredientTableViewController: UITableViewController {
         
         let realm = try! Realm()
         
-        let ingredients = realm.objects(RecipeIngredient)
+        let ingredients = realm.objects(IngredientList)
         
         for ingredient in ingredients{
             ingredientsList.append(ingredient)

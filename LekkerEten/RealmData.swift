@@ -9,9 +9,9 @@
 import Foundation
 import RealmSwift
 
-class RecipeIngredient: Object{
+class IngredientList: Object{
     
     dynamic var name = ""
-    dynamic var amount = 0
-    dynamic var image = 0
+    dynamic var amount = ""
+    dynamic var image: NSData?
 }

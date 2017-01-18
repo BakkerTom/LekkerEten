@@ -18,7 +18,8 @@ class RecipeViewController: UIViewController {
         super.viewDidLoad()
         
         // Testing if ingredient is being added to realm
-        addRecipeIngredients()
+        //addRecipeIngredients()
+        downloadIngredientFile()
         //queryIngredients()
         
         if recipe != nil {
@@ -35,18 +36,24 @@ class RecipeViewController: UIViewController {
     }
     
     
+    // This method should be placed at the recipe/ingredient view and must add all ingredients to the
+    // Grocerylist at once.
     func addRecipeIngredients(){
         
-        let ingredient = RecipeIngredient()
-        ingredient.name = "prei"
-        ingredient.amount = 200
-        ingredient.image = 0
-        
-        let realm = try! Realm()
-        
-        try! realm.write {
-            realm.add(ingredient)
-            print("Added \(ingredient.name) to Realm")
+        let url = NSURL(string: "http://www.puppyplaats.nl/images/giftigvoorhondenfotos/113134249.jpg")!
+        if let imgData = NSData(contentsOf: url as URL) {
+            
+            let ingredient = IngredientList()
+            ingredient.name = "prei"
+            ingredient.amount = "200"
+            ingredient.image = imgData
+            
+            let realm = try! Realm()
+            
+            try! realm.write {
+                realm.add(ingredient)
+                print("Added \(ingredient.name) to Realm")
+            }
         }
     }
     
@@ -54,21 +61,75 @@ class RecipeViewController: UIViewController {
         
         let realm = try! Realm()
         
-        let ingredients = realm.objects(RecipeIngredient)
+        let ingredients = realm.objects(IngredientList.self)
         
         for ingredient in ingredients{
             print("Name: \(ingredient.name) Amount: \(ingredient.amount)")
         }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
+    func downloadIngredientFile(){
+        let requestURL: NSURL = NSURL(string: "https://api.myjson.com/bins/p1lez")!//"https://api.myjson.com/bins/8u6bv")!
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
+        let session = URLSession.shared
+        let task = session.dataTask(with: urlRequest as URLRequest) {
+            (data, response, error) -> Void in
+            
+            let httpResponse = response as! HTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            
+            if (statusCode == 200) {
+                print("Ingredient file retrieved from URL")
+                
+                do{
+                    
+                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String:AnyObject]
+                    
+                    if let ingredients = json["ingredients"] as? [[String: AnyObject]] {
+                        
+                        
+                        //let showIngredient = Ingredient(value: ingredients)
+                        
+                        let realm = try! Realm()
+                        
+                        for ingredient in ingredients {
+                            if let name = ingredient["name"] as? String {
+                                
+                                if let amount = ingredient["amount"] as? String {
+                                    if let image = ingredient["image"] as? String {
+                                        
+                                        let url = NSURL(string: image)!
+                                        if let imgData = NSData(contentsOf: url as URL) {
+                                            
+                                            let showIngredient = IngredientList()
+                                            showIngredient.name = name
+                                            showIngredient.amount = amount
+                                            showIngredient.image = imgData
+                                            
+                                            
+                                            try! realm.write {
+                                                realm.add(showIngredient)
+                                                //realm.create(IngredientList.self, value: ingredient, update: false)
+                                                print("Name: \(showIngredient.name) Amount: \(showIngredient.amount) Image: \(showIngredient.image) to Realm")
+                                            }
+                                        }
+                                        
+
+                                    }
+                                }
+ 
+                            }
+                        }
+                        
+                    }
+                    
+                }catch {
+                    print("Error with Json: \(error)")
+                }
+            }
+        }
+        
+        task.resume()
+    }
 }
