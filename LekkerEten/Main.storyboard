@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGn-wT-Mz3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGn-wT-Mz3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
             <objects>
                 <tableViewController id="u6n-Ac-wh5" customClass="CategoryTableViewController" customModule="LekkerEten" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bi3-0U-6pV">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,7 +83,7 @@
             <objects>
                 <tableViewController id="OX7-8W-MPo" customClass="RecipeTableViewController" customModule="LekkerEten" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" id="Je3-ue-ZY3">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="33o-tH-uk7">
@@ -203,7 +203,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FFo-i3-Q2E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1SZ-Yh-hQD">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-R2-OXf">
@@ -213,10 +213,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FFo-i3-Q2E" firstAttribute="top" secondItem="xZk-R2-OXf" secondAttribute="bottom" id="5Vy-3h-bRe"/>
-                            <constraint firstAttribute="trailing" secondItem="xZk-R2-OXf" secondAttribute="trailing" id="5e9-Cw-zP9"/>
-                            <constraint firstItem="xZk-R2-OXf" firstAttribute="leading" secondItem="1SZ-Yh-hQD" secondAttribute="leading" id="5qe-a1-cqs"/>
-                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="x8Y-Mu-kSE" secondAttribute="bottom" id="ldn-Ha-Rgn"/>
+                            <constraint firstAttribute="bottom" secondItem="xZk-R2-OXf" secondAttribute="bottom" id="2P6-IT-TJr"/>
+                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" id="Nxr-VG-ZLh"/>
+                            <constraint firstAttribute="trailing" secondItem="xZk-R2-OXf" secondAttribute="trailing" id="jVU-uk-es9"/>
+                            <constraint firstItem="xZk-R2-OXf" firstAttribute="leading" secondItem="1SZ-Yh-hQD" secondAttribute="leading" id="tzB-Xb-bJQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -231,6 +231,7 @@
         <scene sceneID="w7P-0d-yT6">
             <objects>
                 <tableViewController id="fFn-9Y-Flw" customClass="IngredientTableViewController" customModule="LekkerEten" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="28" sectionFooterHeight="28" id="MfN-BH-1nZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,6 +239,15 @@
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" rowHeight="162" id="HwK-gH-d4Q" customClass="IngredientTableViewCell" customModule="LekkerEten" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="162"/>
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MfN-BH-1nZ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" rowHeight="128" id="HwK-gH-d4Q" customClass="IngredientTableViewCell" customModule="LekkerEten" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+>>>>>>> 97cdc0690583d6f1e162128903e39703d3c266b9
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HwK-gH-d4Q" id="kOY-FR-u1J">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
@@ -275,14 +285,18 @@
                             <outlet property="delegate" destination="fFn-9Y-Flw" id="KFz-YL-qyy"/>
                         </connections>
                     </tableView>
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Boodschappenlijst" id="Gzl-dL-6dr"/>
+=======
+                    <navigationItem key="navigationItem" title="Boodschappenlijst" id="L9b-k7-Tga"/>
+>>>>>>> 97cdc0690583d6f1e162128903e39703d3c266b9
                     <connections>
                         <outlet property="ingredientTableViewController" destination="MfN-BH-1nZ" id="HTI-Pv-TVm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErR-lN-o7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-431.19999999999999" y="786.65667166416802"/>
+            <point key="canvasLocation" x="508" y="786.65667166416802"/>
         </scene>
         <!--Foodtrucks-->
         <scene sceneID="kIR-RB-XjV">
@@ -293,33 +307,30 @@
                         <viewControllerLayoutGuide type="bottom" id="sHo-Sc-yqC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1bt-RG-N7e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L2c-cp-OOG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L2c-cp-OOG" firstAttribute="leading" secondItem="1bt-RG-N7e" secondAttribute="leading" id="1YH-BP-bZQ"/>
-                            <constraint firstItem="sHo-Sc-yqC" firstAttribute="top" secondItem="L2c-cp-OOG" secondAttribute="bottom" id="7TC-0V-r98"/>
-                            <constraint firstItem="sHo-Sc-yqC" firstAttribute="top" secondItem="L2c-cp-OOG" secondAttribute="bottom" id="Gso-5V-g0U"/>
-                            <constraint firstItem="L2c-cp-OOG" firstAttribute="top" secondItem="kHx-vO-AzP" secondAttribute="bottom" id="J3p-UA-U9C"/>
-                            <constraint firstItem="L2c-cp-OOG" firstAttribute="top" secondItem="kHx-vO-AzP" secondAttribute="bottom" id="dw3-dA-set"/>
-                            <constraint firstAttribute="trailing" secondItem="L2c-cp-OOG" secondAttribute="trailing" id="gct-57-69t"/>
-                            <constraint firstAttribute="trailing" secondItem="L2c-cp-OOG" secondAttribute="trailing" id="hQB-OZ-Z2V"/>
-                            <constraint firstItem="L2c-cp-OOG" firstAttribute="leading" secondItem="1bt-RG-N7e" secondAttribute="leading" id="m0R-OC-Tjs"/>
+                            <constraint firstAttribute="bottom" secondItem="L2c-cp-OOG" secondAttribute="bottom" id="0Im-c3-HaD"/>
+                            <constraint firstItem="L2c-cp-OOG" firstAttribute="top" secondItem="1bt-RG-N7e" secondAttribute="top" id="90z-6s-BNZ"/>
+                            <constraint firstItem="L2c-cp-OOG" firstAttribute="leading" secondItem="1bt-RG-N7e" secondAttribute="leading" id="WH2-eR-rCF"/>
+                            <constraint firstAttribute="trailing" secondItem="L2c-cp-OOG" secondAttribute="trailing" id="s4q-BX-Ap8"/>
+                            <constraint firstAttribute="bottom" secondItem="L2c-cp-OOG" secondAttribute="bottom" id="yEb-9a-2Iu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Foodtrucks" id="Zvh-EA-RJ4"/>
+                    <navigationItem key="navigationItem" title="Foodtrucks" id="NYE-k2-wgF"/>
                     <connections>
                         <outlet property="mapView" destination="L2c-cp-OOG" id="brh-st-W80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NB1-FU-hue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="787"/>
+            <point key="canvasLocation" x="2962.4000000000001" y="786.65667166416802"/>
         </scene>
         <!--Instructions Table View Controller-->
         <scene sceneID="bkK-yu-Cmz">
@@ -335,7 +346,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="202"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wya-24-f7L" id="TJ1-GA-u2X">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-iH-x99" userLabel="txtInstructions">
@@ -379,20 +390,20 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fo7-LV-1Wv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4560.8000000000002" y="181.25937031484258"/>
+            <point key="canvasLocation" x="6439.1999999999998" y="181.25937031484258"/>
         </scene>
         <!--Lekker koken-->
         <scene sceneID="BbH-eq-8ar">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AWZ-ld-zW8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lekker koken" id="qRr-x6-oqU"/>
+                    <tabBarItem key="tabBarItem" title="Lekker koken" image="ic_receipt" id="qRr-x6-oqU"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3BJ-sT-UCq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="3BJ-sT-UCq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.58039215686274503" green="0.73333333333333328" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -411,23 +422,74 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WGn-wT-Mz3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="oPV-jQ-BpO">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="oPV-jQ-BpO">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="AWZ-ld-zW8" kind="relationship" relationship="viewControllers" id="QCF-P6-0uA"/>
-                        <segue destination="EK8-wm-ZCZ" kind="relationship" relationship="viewControllers" id="oez-iR-jVO"/>
-                        <segue destination="fFn-9Y-Flw" kind="relationship" relationship="viewControllers" id="R8g-go-M6K"/>
+                        <segue destination="bC3-Xh-jVu" kind="relationship" relationship="viewControllers" id="oez-iR-jVO"/>
+                        <segue destination="mcW-Ey-OWE" kind="relationship" relationship="viewControllers" id="R8g-go-M6K"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFf-D4-dQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="144.80000000000001" y="20.239880059970016"/>
         </scene>
+        <!--Foodtrucks-->
+        <scene sceneID="hsK-uJ-zWD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bC3-Xh-jVu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Foodtrucks" image="ic_location_on" id="Zvh-EA-RJ4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="eg2-Kb-9Xp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EK8-wm-ZCZ" kind="relationship" relationship="rootViewController" id="3au-C6-Wil"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bco-53-weP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023.2" y="786.65667166416802"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="SPv-7H-SWd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mcW-Ey-OWE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="ic_shopping_cart" id="Gzl-dL-6dr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="wYi-eI-yIy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fFn-9Y-Flw" kind="relationship" relationship="rootViewController" id="5ig-wr-Vaw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50T-Kv-er4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431.19999999999999" y="786.65667166416802"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ic_location_on" width="24" height="24"/>
+        <image name="ic_receipt" width="24" height="24"/>
+        <image name="ic_shopping_cart" width="24" height="24"/>
         <image name="pexels-photo-70497" width="2295" height="1526"/>
     </resources>
 </document>
