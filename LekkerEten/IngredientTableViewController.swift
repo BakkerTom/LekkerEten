@@ -113,6 +113,11 @@ class IngredientTableViewController: UITableViewController {
     }
     */
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     func getIngredients(){
         
         let realm = try! Realm()
