@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGn-wT-Mz3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGn-wT-Mz3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -174,6 +174,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imgRecipe" destination="prT-KL-YBX" id="f1j-yZ-KyM"/>
+                                    <outlet property="lblDescription" destination="jJp-Zg-pXD" id="8hW-gy-1py"/>
                                     <outlet property="lblTitle" destination="kRj-IA-HQY" id="xFo-ba-lXm"/>
                                     <segue destination="dUC-RN-awr" kind="presentation" modalPresentationStyle="overFullScreen" id="aGs-5i-B4C"/>
                                 </connections>
@@ -207,8 +208,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-R2-OXf">
-                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -220,7 +221,7 @@
                                 </connections>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-01-6bl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                 <connections>
                                     <action selector="dismissModal:" destination="dUC-RN-awr" eventType="touchUpInside" id="avF-Gb-HGf"/>
                                 </connections>
@@ -231,7 +232,7 @@
                             <constraint firstAttribute="bottom" secondItem="xZk-R2-OXf" secondAttribute="bottom" id="2P6-IT-TJr"/>
                             <constraint firstItem="ynS-01-6bl" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" id="BF5-LU-rw6"/>
                             <constraint firstItem="ynS-01-6bl" firstAttribute="leading" secondItem="1SZ-Yh-hQD" secondAttribute="leading" id="N79-An-Mmh"/>
-                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" constant="40" id="Nxr-VG-ZLh"/>
+                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" constant="48" id="Nxr-VG-ZLh"/>
                             <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="ynS-01-6bl" secondAttribute="bottom" id="P2E-JP-oCc"/>
                             <constraint firstAttribute="trailing" secondItem="xZk-R2-OXf" secondAttribute="trailing" id="jVU-uk-es9"/>
                             <constraint firstAttribute="trailing" secondItem="ynS-01-6bl" secondAttribute="trailing" id="q1w-NX-qEo"/>
@@ -264,7 +265,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HwK-gH-d4Q" id="kOY-FR-u1J">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUS-2b-urJ">
@@ -356,7 +357,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="202"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wya-24-f7L" id="TJ1-GA-u2X">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-iH-x99" userLabel="txtInstructions">

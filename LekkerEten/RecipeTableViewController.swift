@@ -69,7 +69,7 @@ class RecipeTableViewController: UITableViewController {
         let recipe = recipes[indexPath.row]
         
         cell?.lblTitle.text = recipe.title
-        //cell?.lblDescription.text = recipe.description
+        cell?.lblDescription.text = recipe.description
         //cell?.lblInstructions.text = recipe.description
         //let url = URL(string: "https:" + recipe.imageUrl!)
         let url = URL(string: "http:" + recipe.imageUrl!)
