@@ -19,7 +19,8 @@ class IngredientTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // Call maken naar de items in de Realm file
-        queryIngredients()
+        getIngredients()
+        //removeAllIngredients()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -110,7 +111,7 @@ class IngredientTableViewController: UITableViewController {
     }
     */
     
-    func queryIngredients(){
+    func getIngredients(){
         
         let realm = try! Realm()
         
@@ -120,6 +121,21 @@ class IngredientTableViewController: UITableViewController {
             ingredientsList.append(ingredient)
             print("Name: \(ingredient.name) Amount: \(ingredient.amount)")
         }
+    }
+    
+    func removeAllIngredients(){
+        let realm = try! Realm()
+        
+        //let ingredients = realm.objects(IngredientList.self)
+        
+        try! realm.write {
+            realm.deleteAll()
+        }
+        
+    }
+    
+    func removeSpecificIngredient(){
+        
     }
 
 }

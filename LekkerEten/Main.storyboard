@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGn-wT-Mz3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGn-wT-Mz3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -231,26 +231,16 @@
         <scene sceneID="w7P-0d-yT6">
             <objects>
                 <tableViewController id="fFn-9Y-Flw" customClass="IngredientTableViewController" customModule="LekkerEten" customModuleProvider="target" sceneMemberID="viewController">
-<<<<<<< HEAD
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="28" sectionFooterHeight="28" id="MfN-BH-1nZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" rowHeight="162" id="HwK-gH-d4Q" customClass="IngredientTableViewCell" customModule="LekkerEten" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="162"/>
-=======
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MfN-BH-1nZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="157" sectionHeaderHeight="28" sectionFooterHeight="28" id="MfN-BH-1nZ">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" rowHeight="128" id="HwK-gH-d4Q" customClass="IngredientTableViewCell" customModule="LekkerEten" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="128"/>
->>>>>>> 97cdc0690583d6f1e162128903e39703d3c266b9
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" rowHeight="157" id="HwK-gH-d4Q" customClass="IngredientTableViewCell" customModule="LekkerEten" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HwK-gH-d4Q" id="kOY-FR-u1J">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUS-2b-urJ">
@@ -285,11 +275,7 @@
                             <outlet property="delegate" destination="fFn-9Y-Flw" id="KFz-YL-qyy"/>
                         </connections>
                     </tableView>
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="Boodschappenlijst" id="Gzl-dL-6dr"/>
-=======
                     <navigationItem key="navigationItem" title="Boodschappenlijst" id="L9b-k7-Tga"/>
->>>>>>> 97cdc0690583d6f1e162128903e39703d3c266b9
                     <connections>
                         <outlet property="ingredientTableViewController" destination="MfN-BH-1nZ" id="HTI-Pv-TVm"/>
                     </connections>
@@ -346,7 +332,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="202"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wya-24-f7L" id="TJ1-GA-u2X">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-iH-x99" userLabel="txtInstructions">
@@ -398,7 +384,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AWZ-ld-zW8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Lekker koken" image="ic_receipt" id="qRr-x6-oqU"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="3BJ-sT-UCq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="3BJ-sT-UCq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -446,7 +432,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bC3-Xh-jVu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Foodtrucks" image="ic_location_on" id="Zvh-EA-RJ4"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="eg2-Kb-9Xp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eg2-Kb-9Xp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -470,7 +456,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mcW-Ey-OWE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="ic_shopping_cart" id="Gzl-dL-6dr"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="wYi-eI-yIy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="wYi-eI-yIy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

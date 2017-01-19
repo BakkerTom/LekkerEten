@@ -19,7 +19,7 @@ class RecipeViewController: UIViewController {
         
         // Testing if ingredient is being added to realm
         //addRecipeIngredients()
-        downloadIngredientFile()
+        downloadIngredientFile(jsonFile: "https://api.myjson.com/bins/p1lez")
         //queryIngredients()
         
         if recipe != nil {
@@ -57,6 +57,7 @@ class RecipeViewController: UIViewController {
         }
     }
     
+    /*
     func queryIngredients(){
         
         let realm = try! Realm()
@@ -66,11 +67,11 @@ class RecipeViewController: UIViewController {
         for ingredient in ingredients{
             print("Name: \(ingredient.name) Amount: \(ingredient.amount)")
         }
-    }
+    }*/
     
     
-    func downloadIngredientFile(){
-        let requestURL: NSURL = NSURL(string: "https://api.myjson.com/bins/p1lez")!//"https://api.myjson.com/bins/8u6bv")!
+    func downloadIngredientFile(jsonFile: String){
+        let requestURL: NSURL = NSURL(string: jsonFile)!//"https://api.myjson.com/bins/8u6bv")!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
         let session = URLSession.shared
         let task = session.dataTask(with: urlRequest as URLRequest) {
