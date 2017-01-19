@@ -175,7 +175,7 @@
                                 <connections>
                                     <outlet property="imgRecipe" destination="prT-KL-YBX" id="f1j-yZ-KyM"/>
                                     <outlet property="lblTitle" destination="kRj-IA-HQY" id="xFo-ba-lXm"/>
-                                    <segue destination="dUC-RN-awr" kind="show" id="aGs-5i-B4C"/>
+                                    <segue destination="dUC-RN-awr" kind="presentation" modalPresentationStyle="overFullScreen" id="aGs-5i-B4C"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -203,19 +203,38 @@
                         <viewControllerLayoutGuide type="bottom" id="FFo-i3-Q2E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1SZ-Yh-hQD">
-                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-R2-OXf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            <webView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-R2-OXf">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="snF-w0-V2B" appends="YES" id="f4K-sJ-1RZ"/>
+                                </connections>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-01-6bl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <connections>
+                                    <action selector="dismissModal:" destination="dUC-RN-awr" eventType="touchUpInside" id="avF-Gb-HGf"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69582884339080464" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="xZk-R2-OXf" secondAttribute="bottom" id="2P6-IT-TJr"/>
-                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" id="Nxr-VG-ZLh"/>
+                            <constraint firstItem="ynS-01-6bl" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" id="BF5-LU-rw6"/>
+                            <constraint firstItem="ynS-01-6bl" firstAttribute="leading" secondItem="1SZ-Yh-hQD" secondAttribute="leading" id="N79-An-Mmh"/>
+                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="1SZ-Yh-hQD" secondAttribute="top" constant="40" id="Nxr-VG-ZLh"/>
+                            <constraint firstItem="xZk-R2-OXf" firstAttribute="top" secondItem="ynS-01-6bl" secondAttribute="bottom" id="P2E-JP-oCc"/>
                             <constraint firstAttribute="trailing" secondItem="xZk-R2-OXf" secondAttribute="trailing" id="jVU-uk-es9"/>
+                            <constraint firstAttribute="trailing" secondItem="ynS-01-6bl" secondAttribute="trailing" id="q1w-NX-qEo"/>
                             <constraint firstItem="xZk-R2-OXf" firstAttribute="leading" secondItem="1SZ-Yh-hQD" secondAttribute="leading" id="tzB-Xb-bJQ"/>
                         </constraints>
                     </view>
@@ -224,6 +243,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYg-zQ-MHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="snF-w0-V2B">
+                    <connections>
+                        <action selector="didSwipeDown:" destination="dUC-RN-awr" id="Azk-R8-jHa"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3768.8000000000002" y="19.340329835082461"/>
         </scene>
@@ -240,7 +264,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HwK-gH-d4Q" id="kOY-FR-u1J">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="127.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUS-2b-urJ">
@@ -332,7 +356,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="202"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wya-24-f7L" id="TJ1-GA-u2X">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="201.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-iH-x99" userLabel="txtInstructions">
@@ -384,7 +408,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AWZ-ld-zW8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Lekker koken" image="ic_receipt" id="qRr-x6-oqU"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="3BJ-sT-UCq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="3BJ-sT-UCq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -432,7 +456,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bC3-Xh-jVu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Foodtrucks" image="ic_location_on" id="Zvh-EA-RJ4"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="eg2-Kb-9Xp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eg2-Kb-9Xp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -456,7 +480,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mcW-Ey-OWE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="ic_shopping_cart" id="Gzl-dL-6dr"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="wYi-eI-yIy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="wYi-eI-yIy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.58039215690000001" green="0.73333333329999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

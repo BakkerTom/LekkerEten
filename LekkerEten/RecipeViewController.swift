@@ -50,6 +50,14 @@ class RecipeViewController: UIViewController {
         }
     }
     
+    @IBAction func dismissModal(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func didSwipeDown(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func queryIngredients(){
         
         let realm = try! Realm()
