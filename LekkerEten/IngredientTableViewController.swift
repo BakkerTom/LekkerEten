@@ -13,13 +13,14 @@ class IngredientTableViewController: UITableViewController {
 
     @IBOutlet var ingredientTableViewController: UITableView!
     
-    var ingredientsList = [RecipeIngredient]()
+    var ingredientsList = [IngredientList]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Call maken naar de items in de Realm file
-        queryIngredients()
+        getIngredients()
+        //removeAllIngredients()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -52,8 +53,12 @@ class IngredientTableViewController: UITableViewController {
         //cell.ingredientImage
         let ingredientCell = ingredientsList[indexPath.row]
         
+        // Convert NSData to UIImage
+        let image: UIImage = UIImage(data:ingredientCell.image as! Data)!
+        
+        cell.ingredientImage.image = image
         cell.ingredientName.text = ingredientCell.name;
-        cell.ingredientAmount.text = String(ingredientCell.amount)
+        cell.ingredientAmount.text = String(ingredientCell.amount) + " gram"
 
         // Configure the cell...
 
@@ -106,16 +111,31 @@ class IngredientTableViewController: UITableViewController {
     }
     */
     
-    func queryIngredients(){
+    func getIngredients(){
         
         let realm = try! Realm()
         
-        let ingredients = realm.objects(RecipeIngredient)
+        let ingredients = realm.objects(IngredientList)
         
         for ingredient in ingredients{
             ingredientsList.append(ingredient)
             print("Name: \(ingredient.name) Amount: \(ingredient.amount)")
         }
+    }
+    
+    func removeAllIngredients(){
+        let realm = try! Realm()
+        
+        //let ingredients = realm.objects(IngredientList.self)
+        
+        try! realm.write {
+            realm.deleteAll()
+        }
+        
+    }
+    
+    func removeSpecificIngredient(){
+        
     }
 
 }
