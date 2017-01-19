@@ -22,6 +22,8 @@ class IngredientTableViewController: UITableViewController {
         getIngredients()
         //removeAllIngredients()
         
+        self.tableView.rowHeight = 96.0
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
